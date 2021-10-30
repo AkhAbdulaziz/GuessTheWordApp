@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:layout_gravity="top|center"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/back_option"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_gravity="left|center"
+            android:adjustViewBounds="true"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:src="@drawable/back" />
+
+
+        <TextView
+            android:id="@+id/questionNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Level 1"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right|center"
+            android:background="@drawable/coins_bg2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="8dp">
+
+            <TextView
+                android:id="@+id/coins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="84dp"
+            android:src="@drawable/ic_dollar" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/imageQuestion1"
+            style="@style/questionImageStyle"
+            android:layout_gravity="left|top"
+            android:src="@drawable/strawberry" />
+
+        <ImageView
+            android:id="@+id/imageQuestion2"
+            style="@style/questionImageStyle"
+            android:layout_gravity="right|top"
+            android:src="@drawable/banana" />
+
+        <ImageView
+            android:id="@+id/imageQuestion3"
+            style="@style/questionImageStyle"
+            android:layout_gravity="left|bottom"
+            android:src="@drawable/kiwi" />
+
+        <ImageView
+            android:id="@+id/imageQuestion4"
+            style="@style/questionImageStyle"
+            android:layout_gravity="right|bottom"
+            android:src="@drawable/cherry" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="24dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/containerAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/AnswerButton"
+                tools:text="A" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/AnswerButton"
+                android:layout_marginLeft="5dp"
+                tools:text="A" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/AnswerButton"
+                android:layout_marginLeft="5dp"
+                tools:text="A" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/AnswerButton"
+                android:layout_marginLeft="5dp"
+                tools:text="A" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/AnswerButton"
+                android:layout_marginLeft="5dp"
+                tools:text="A" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/AnswerButton"
+                android:layout_marginLeft="5dp"
+                tools:text="A" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/AnswerButton"
+                android:layout_marginLeft="5dp"
+                tools:text="A" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/AnswerButton"
+                android:layout_marginLeft="5dp"
+                tools:text="A" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/AnswerButton"
+                android:layout_marginLeft="5dp"
+                tools:text="A" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/AnswerButton"
+                android:layout_marginLeft="5dp"
+                tools:text="A" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/containerVariant1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/VariantButton"
+                android:text="A" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/VariantButton"
+                android:layout_marginLeft="5dp"
+                android:text="B" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/VariantButton"
+                android:layout_marginLeft="5dp"
+                android:text="C" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/VariantButton"
+                android:layout_marginLeft="5dp"
+                android:text="A" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/VariantButton"
+                android:layout_marginLeft="5dp"
+                android:text="A" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/VariantButton"
+                android:layout_marginLeft="5dp"
+                android:text="A" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/VariantButton"
+                android:layout_marginLeft="5dp"
+                android:text="A" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/containerVariant2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/VariantButton"
+                android:text="A" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/VariantButton"
+                android:layout_marginLeft="5dp"
+                android:text="B" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/VariantButton"
+                android:layout_marginLeft="5dp"
+                android:text="C" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/VariantButton"
+                android:layout_marginLeft="5dp"
+                android:text="D" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/VariantButton"
+                android:layout_marginLeft="5dp"
+                android:text="E" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/VariantButton"
+                android:layout_marginLeft="5dp"
+                android:text="F" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/VariantButton"
+                android:layout_marginLeft="5dp"
+                android:text="G" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/winner_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8DFFFFFF"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="CONGRATULATIONS"
+            android:textColor="#C26602"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/winner_dialog" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rotation="180"
+                android:src="@drawable/back2" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/btnRestart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/restart" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

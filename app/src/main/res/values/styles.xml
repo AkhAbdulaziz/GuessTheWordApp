@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AnswerButton">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:background">@drawable/answer_letter_background</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:shadowRadius">5</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowColor">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="VariantButton">
+        <item name="android:background">@drawable/variant_letter_background</item>
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="questionImageStyle">
+        <item name="android:layout_width">184dp</item>
+        <item name="android:layout_height">184dp</item>
+        <item name="android:background">@drawable/questions_bg</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+</resources>
